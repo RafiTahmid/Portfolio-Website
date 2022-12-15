@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: #1c2a44;
+  /* background-color: #1c2a44; */
+  background-color: black;
 }
 
 h1,
@@ -19,3 +20,31 @@ a {
   color: white;
   text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: burlywood;
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: transparent;
+  color: #fff;
+}
+
+.btn :hover {
+  background: rgba(250, 250, 250, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* 34 */
