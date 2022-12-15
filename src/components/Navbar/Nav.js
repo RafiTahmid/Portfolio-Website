@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Nav = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -23,6 +30,14 @@ const Nav = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+
+      <div className="hamburger" onClick={handleClick}>
+        {click ? (
+          <FaTimes size={30} style={{ color: "#fff" }}></FaTimes>
+        ) : (
+          <FaBars size={30} style={{ color: "#fff" }}></FaBars>
+        )}
+      </div>
     </div>
   );
 };
