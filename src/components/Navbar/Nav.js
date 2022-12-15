@@ -16,7 +16,7 @@ const Nav = () => {
         <h2>Portfolio</h2>
       </Link>
 
-      <ul className="nav-menu">
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -24,7 +24,7 @@ const Nav = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/project">Projects</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
