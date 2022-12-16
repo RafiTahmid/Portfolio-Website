@@ -16,10 +16,10 @@ const HeroImg = () => {
           <p>Web Developer</p>
         </div>
         <div>
-          <Link to="/projects" className="btn">
+          <Link to="/projects" className="btn btn1">
             Projects
           </Link>
-          <Link to="/contact" className="btn btn-light">
+          <Link to="/contact" className="btn btn2">
             Contact
           </Link>
         </div>
